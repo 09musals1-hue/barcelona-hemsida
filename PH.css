@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    background-color: yellow;
+    background-image: url("barcalona.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    padding: 20px;
+    margin: 0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    background: linear-gradient(to right, #004d98, #a50044);
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 15px;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: #ffdd00;
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: blue;
+    font-size: 30px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid black;
+    margin: 20px 0;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+section {
+    margin-bottom: 50px;
+    padding: 25px;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.95),
+        rgba(255, 255, 255, 0.75)
+    );
+    border-radius: 15px;
+    border: 2px solid #004d98;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.highlight {
+    background-color: white;
+    color: red;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+ul li {
+    background-color: rgba(0, 77, 152, 0.15);
+    margin: 5px 0;
+    padding: 10px;
+    border-left: 4px solid #004d98;
+}
+
+footer {
+    background: linear-gradient(to right, #004d98, #a50044);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    img {
+        width: 250px;
+    }
+}
